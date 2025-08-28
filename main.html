@@ -9,22 +9,22 @@
 <body>
 	<!-- the entire body must be written by student -->
 	<form method="post">
-		<label for="name">Name:<input type="text" name="name" id="name" placeholder="Name"></label>
-		<label for="email">Email:<input type="email" id="email" name="email" placeholder="Email"></label>
-        <label for="gender_m">Male<input type="radio" name="gender" id="gender_m"></label>
-		 <label for="gender_f">Female<input type="radio" name="gender" id="gender_f">Female
+		<label for="name">Name:<input type="text" name="name" id="name" placeholder="Name" required></label>
+		<label for="email">Email:<input type="email" id="email" name="email" placeholder="Email" required></label>
+         <label for="gender_m">Male<input type="radio" name="gender" id="gender_m" required></label>
+		 <label for="gender_f">Female<input type="radio" name="gender" id="gender_f" required>Female
 		</label>
-		<label for="cars">Car Brands: <select id="cars" name="carBrands">
-			<option>--Please choose an option--</option>
+		<label for="cars">Car Brands: <select id="cars" name="carBrands" aria-required>
+			<option >--Please choose an option--</option>
 		    <option>Bmw</option>
 			<option>Volvo</option>
 			<option>Swift</option>
 		</select></label>
-		<label for="age">Age:<input type="number" id="age" name="age" placeholder="Age"></label>
-		<label for="dob">DOB:<input type="date" name="dob"id="dob"></label>
+		<label for="age">Age:<input type="number" id="age" name="age" placeholder="Age" required></label>
+		<label for="dob">DOB:<input type="date" name="dob"id="dob" required></label>
 		<label for="tel">Phone Number:<input type="tel" name="phone-number"id="tel" placeholder="xxx-xxx-xxxx"></label>
-		<label for="password">Password:<input type="password" name="password" id="password" placeholder="Password"></label>
-		<label for="tos"><input type="checkbox" id="tos">I agree to the TOS</label>
+		<label for="password">Password:<input type="password" name="password" id="password" placeholder="Password" required></label>
+		<label for="tos"><input type="checkbox" id="tos" required>I agree to the TOS</label>
 		<button type="submit" name="submit">Submit</button>
 	</form>
     <script type="text/javascript" src="./script.js">
